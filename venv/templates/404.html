@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block title %} Not Found {% endblock %}
+
+{% block page_content %}
+    <h1>Not Found</h1>
+    <p><a href="{{ url_for('weather') }}">Return to Weather page</a></p>
+{% endblock %}
