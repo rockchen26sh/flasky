@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 {% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
 
 {% block navbar %}
     <nav class="navbar navbar-inverse" role="navigation">
         <div class="container">
-            <a class="navbar-brand" href="{{ url_for('weather') }}">Weather</a>
+            <div class="row">
+                <div class="col-md-1">
+                    <a class="navbar-collapse" href="{{ url_for('weather') }}">Weather</a>
+                </div>
+                <div class="col-md-1">
+                    <a class="navbar-collapse" href="{{ url_for('upload') }}">upload</a>
+                </div>
+                <div class="col-md-1">
+                    <a class="navbar-collapse" href="{{ url_for('user') }}">user</a>
+                </div>
+            </div>
+
         </div>
 </nav>
 {% endblock %}

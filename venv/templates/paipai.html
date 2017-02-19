@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block pagecontent %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                {{ wtf.quick_form(form,enctype = 'multiport/form-data') }}
+
+            </div>
+        </div>
+    </div>
